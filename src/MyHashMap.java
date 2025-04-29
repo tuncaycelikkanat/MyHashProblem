@@ -1,5 +1,5 @@
 public class MyHashMap {
-    private String[] arr = new String[10];
+
     private MyNode[] arr2 = new MyNode[10];
 
     public MyHashMap() {
@@ -7,8 +7,7 @@ public class MyHashMap {
 
     public void put(int key, String value){
         if (isContains(key)) {
-            //arr[hashedKey(key)] = value;
-            //System.out.println("The data is updated.");
+
             MyNode current = arr2[hashedKey(key)];
 
             while(current.getNext() != null){
@@ -19,7 +18,6 @@ public class MyHashMap {
             current.setNext(new MyNode(value));
 
         } else {
-            //arr[hashedKey(key)] = value;
             arr2[hashedKey(key)] = new MyNode(value);
         }
     }
@@ -60,11 +58,6 @@ public class MyHashMap {
 
     public boolean isContains(int key){
         boolean isContains = false;
-//        for (String arr1 : arr) {
-//            if (arr[hashedKey(key)] != null) {
-//                isContains = true;
-//            }
-//        }
 
         for (MyNode arr1 : arr2) {
             if (arr2[hashedKey(key)] != null) {
