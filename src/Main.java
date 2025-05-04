@@ -16,5 +16,6 @@ public class Main {
         hashMap.showAll();
 
         System.out.println("deneme");
+        System.out.println("String added");
     }
 }
