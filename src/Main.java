@@ -14,8 +14,5 @@ public class Main {
         hashMap.put(1, "b");
 
         hashMap.showAll();
-
-        System.out.println("deneme");
-        System.out.println("String added");
     }
 }
