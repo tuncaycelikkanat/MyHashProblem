@@ -14,5 +14,7 @@ public class Main {
         hashMap.put(1, "b");
 
         hashMap.showAll();
+
+        System.out.println("Test branch");
     }
 }
